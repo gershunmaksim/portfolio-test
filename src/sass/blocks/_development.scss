@@ -1,0 +1,9 @@
+.development {
+  &__title {
+    color: red;
+  }
+  &__block {
+    display: flex;
+    flex-direction: row;
+  }
+}

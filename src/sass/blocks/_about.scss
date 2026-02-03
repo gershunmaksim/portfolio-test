@@ -1,0 +1,36 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.about {
+  margin-top: 126px;
+  &__container {
+    display: flex;
+  }
+  &__woman {
+    width: 40%;
+  }
+  &__me {
+    width: 60%;
+  }
+  &__title {
+    position: relative;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    z-index: 2;
+    @include m.before_circle;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    width: 445px;
+    height: 60px;
+  }
+  &__subtitle {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}

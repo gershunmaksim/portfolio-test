@@ -2,9 +2,9 @@
 @use '../base/variables' as v;
 
 .about {
-  margin-top: 126px;
   &__container {
     display: flex;
+    margin-top: 126px;
   }
   &__woman {
     width: 40%;
@@ -32,5 +32,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
+    margin-top: 20px;
   }
 }

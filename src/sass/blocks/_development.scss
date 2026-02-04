@@ -1,9 +1,35 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
 .development {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   &__title {
-    color: red;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    padding-left: 24px;
   }
   &__block {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
+    width: calc(50% - 25px);
+    &__icon {
+      position: relative;
+      margin-top: 35px;
+      padding-left: 15px;
+      padding-top: 8px;
+      @include m.before_circle;
+    }
+    &__text {
+     margin-top: 35px; 
+    }
+  }
+  &__subtitle {
+    padding-left: 24px;
   }
 }
+
